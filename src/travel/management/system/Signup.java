@@ -82,11 +82,8 @@ public class Signup extends JFrame implements ActionListener {
         b1 = new JButton("Create");
         b1.setBounds(80, 250, 100, 30);
         b1.setFont(new Font("Tahoma", Font.BOLD, 14));
-        // b1.setBackground(new Color(133, 193, 233));
-        // b1.setForeground(Color.WHITE);
         b1.setBackground(Color.WHITE);
         b1.setForeground(new Color(133, 193, 233));
-        // b1.setBorder(BorderFactory.createEmptyBorder());
         b1.addActionListener(this);
         p1.add(b1);
 
@@ -95,7 +92,6 @@ public class Signup extends JFrame implements ActionListener {
         b2.setFont(new Font("Tahoma", Font.BOLD, 14));
         b2.setBackground(Color.WHITE);
         b2.setForeground(new Color(133, 193, 233));
-        // b2.setBorder(BorderFactory.createEmptyBorder());
         b2.addActionListener(this);
         p1.add(b2);
     }

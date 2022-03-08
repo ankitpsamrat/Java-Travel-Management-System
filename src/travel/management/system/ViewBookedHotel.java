@@ -5,23 +5,23 @@ import java.sql.*;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class ViewPackage extends JFrame implements ActionListener {
+public class ViewBookedHotel extends JFrame implements ActionListener {
 
     JButton b1;
 
-    ViewPackage(String username) {
-        setBounds(280, 120, 900, 450);
+    ViewBookedHotel(String username) {
+        setBounds(250, 50, 1000, 600);
         setLayout(null);
         getContentPane().setBackground(Color.WHITE);
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("travel/management/system/icons/bookedDetails.jpg"));
         Image i2 = i1.getImage().getScaledInstance(500, 400, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
-        JLabel l10 = new JLabel(i3);
-        l10.setBounds(450, 20, 500, 400);
-        add(l10);
+        JLabel l30 = new JLabel(i3);
+        l30.setBounds(450, 20, 500, 400);
+        add(l30);
 
-        JLabel heading = new JLabel("VIEW PACKAGE DETAILS");
+        JLabel heading = new JLabel("BOOKED HOTEL DETAILS");
         heading.setBounds(60, 0, 300, 30);
         heading.setFont(new Font("Tahoma", Font.PLAIN, 20));
         add(heading);
@@ -34,7 +34,7 @@ public class ViewPackage extends JFrame implements ActionListener {
         l11.setBounds(250, 50, 200, 30);
         add(l11);
 
-        JLabel l2 = new JLabel("Package");
+        JLabel l2 = new JLabel("Hotel Name");
         l2.setBounds(30, 90, 100, 30);
         add(l2);
 
@@ -50,7 +50,7 @@ public class ViewPackage extends JFrame implements ActionListener {
         l13.setBounds(250, 130, 200, 30);
         add(l13);
 
-        JLabel l4 = new JLabel("ID");
+        JLabel l4 = new JLabel("Total Days");
         l4.setBounds(30, 170, 100, 30);
         add(l4);
 
@@ -58,7 +58,7 @@ public class ViewPackage extends JFrame implements ActionListener {
         l14.setBounds(250, 170, 200, 30);
         add(l14);
 
-        JLabel l5 = new JLabel("ID Number");
+        JLabel l5 = new JLabel("AC Included?");
         l5.setBounds(30, 210, 100, 30);
         add(l5);
 
@@ -66,7 +66,7 @@ public class ViewPackage extends JFrame implements ActionListener {
         l15.setBounds(250, 210, 200, 30);
         add(l15);
 
-        JLabel l6 = new JLabel("Phone");
+        JLabel l6 = new JLabel("Food Included?");
         l6.setBounds(30, 250, 100, 30);
         add(l6);
 
@@ -74,7 +74,7 @@ public class ViewPackage extends JFrame implements ActionListener {
         l16.setBounds(250, 250, 200, 30);
         add(l16);
 
-        JLabel l7 = new JLabel("Price");
+        JLabel l7 = new JLabel("ID");
         l7.setBounds(30, 290, 100, 30);
         add(l7);
 
@@ -82,9 +82,33 @@ public class ViewPackage extends JFrame implements ActionListener {
         l17.setBounds(250, 290, 200, 30);
         add(l17);
 
+        JLabel l8 = new JLabel("ID Number");
+        l8.setBounds(30, 330, 100, 30);
+        add(l8);
+
+        JLabel l18 = new JLabel();
+        l18.setBounds(250, 330, 200, 30);
+        add(l18);
+
+        JLabel l9 = new JLabel("Phone");
+        l9.setBounds(30, 370, 100, 30);
+        add(l9);
+
+        JLabel l19 = new JLabel();
+        l19.setBounds(250, 370, 200, 30);
+        add(l19);
+
+        JLabel l10 = new JLabel("Total Cost");
+        l10.setBounds(30, 410, 100, 30);
+        add(l10);
+
+        JLabel l20 = new JLabel();
+        l20.setBounds(250, 410, 200, 30);
+        add(l20);
+
         try {
             Conn c = new Conn();
-            ResultSet rs = c.s.executeQuery("select * from bookpackage where username='" + username + "'");
+            ResultSet rs = c.s.executeQuery("select * from bookHotel where username='" + username + "'");
             while (rs.next()) {
                 l11.setText(rs.getString(1));
                 l12.setText(rs.getString(2));
@@ -93,13 +117,16 @@ public class ViewPackage extends JFrame implements ActionListener {
                 l15.setText(rs.getString(5));
                 l16.setText(rs.getString(6));
                 l17.setText(rs.getString(7));
+                l18.setText(rs.getString(8));
+                l19.setText(rs.getString(9));
+                l20.setText(rs.getString(10));
             }
         } catch (Exception e) {
 
         }
 
         b1 = new JButton("Back");
-        b1.setBounds(150, 350, 100, 30);
+        b1.setBounds(150, 460, 100, 30);
         b1.setBackground(Color.BLUE);
         b1.setForeground(Color.WHITE);
         b1.addActionListener(this);
@@ -112,6 +139,6 @@ public class ViewPackage extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new ViewPackage("").setVisible(true);
+        new ViewBookedHotel("").setVisible(true);
     }
 }

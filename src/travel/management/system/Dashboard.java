@@ -36,9 +36,7 @@ public class Dashboard extends JFrame implements ActionListener {
                 b1.setFont(new Font("Tahoma", Font.PLAIN, 20));
                 b1.setBackground(new Color(0, 0, 102));
                 b1.setForeground(Color.WHITE);
-                // b1.setMargin(new Insets(0, 0, 0, 350));
                 b1.setBounds(0, 0, 270, 35);
-                // b1.setBorder(BorderFactory.createEmptyBorder());
                 b1.addActionListener(this);
                 p2.add(b1);
 
@@ -47,7 +45,6 @@ public class Dashboard extends JFrame implements ActionListener {
                 b2.setBackground(new Color(0, 0, 102));
                 b2.setForeground(Color.WHITE);
                 b2.setBounds(0, 30, 270, 35);
-                // b2.setBorder(BorderFactory.createEmptyBorder());
                 b2.addActionListener(this);
                 p2.add(b2);
 
@@ -56,7 +53,6 @@ public class Dashboard extends JFrame implements ActionListener {
                 b3.setBackground(new Color(0, 0, 102));
                 b3.setForeground(Color.WHITE);
                 b3.setBounds(0, 60, 270, 35);
-                // b3.setBorder(BorderFactory.createEmptyBorder());
                 b3.addActionListener(this);
                 p2.add(b3);
 
@@ -65,8 +61,7 @@ public class Dashboard extends JFrame implements ActionListener {
                 b4.setBackground(new Color(0, 0, 102));
                 b4.setForeground(Color.WHITE);
                 b4.setBounds(0, 90, 270, 35);
-                // b4.setBorder(BorderFactory.createEmptyBorder());
-                // b1.addActionListener(this);
+                b4.addActionListener(this);
                 p2.add(b4);
 
                 b5 = new JButton("Check Package");
@@ -74,7 +69,6 @@ public class Dashboard extends JFrame implements ActionListener {
                 b5.setBackground(new Color(0, 0, 102));
                 b5.setForeground(Color.WHITE);
                 b5.setBounds(0, 120, 270, 35);
-                // b5.setBorder(BorderFactory.createEmptyBorder());
                 b5.addActionListener(this);
                 p2.add(b5);
 
@@ -83,7 +77,6 @@ public class Dashboard extends JFrame implements ActionListener {
                 b6.setBackground(new Color(0, 0, 102));
                 b6.setForeground(Color.WHITE);
                 b6.setBounds(0, 150, 270, 35);
-                // b6.setBorder(BorderFactory.createEmptyBorder());
                 b6.addActionListener(this);
                 p2.add(b6);
 
@@ -92,35 +85,31 @@ public class Dashboard extends JFrame implements ActionListener {
                 b7.setBackground(new Color(0, 0, 102));
                 b7.setForeground(Color.WHITE);
                 b7.setBounds(0, 180, 270, 35);
-                // b7.setBorder(BorderFactory.createEmptyBorder());
                 b7.addActionListener(this);
                 p2.add(b7);
 
-                b8 = new JButton("View Hotals");
+                b8 = new JButton("View Hotels");
                 b8.setFont(new Font("Tahoma", Font.PLAIN, 20));
                 b8.setBackground(new Color(0, 0, 102));
                 b8.setForeground(Color.WHITE);
                 b8.setBounds(0, 210, 270, 35);
-                // b8.setBorder(BorderFactory.createEmptyBorder());
                 b8.addActionListener(this);
                 p2.add(b8);
 
-                b9 = new JButton("Book Hotal");
+                b9 = new JButton("Book Hotel");
                 b9.setFont(new Font("Tahoma", Font.PLAIN, 20));
                 b9.setBackground(new Color(0, 0, 102));
                 b9.setForeground(Color.WHITE);
                 b9.setBounds(0, 240, 270, 35);
-                // b9.setBorder(BorderFactory.createEmptyBorder());
-                // b1.addActionListener(this);
+                b9.addActionListener(this);
                 p2.add(b9);
 
-                b10 = new JButton("View Booked Hotal");
+                b10 = new JButton("View Booked Hotel");
                 b10.setFont(new Font("Tahoma", Font.PLAIN, 20));
                 b10.setBackground(new Color(0, 0, 102));
                 b10.setForeground(Color.WHITE);
                 b10.setBounds(0, 270, 270, 35);
-                // b10.setBorder(BorderFactory.createEmptyBorder());
-                // b1.addActionListener(this);
+                b10.addActionListener(this);
                 p2.add(b10);
 
                 b11 = new JButton("Destinations");
@@ -128,7 +117,6 @@ public class Dashboard extends JFrame implements ActionListener {
                 b11.setBackground(new Color(0, 0, 102));
                 b11.setForeground(Color.WHITE);
                 b11.setBounds(0, 300, 270, 35);
-                // b11.setBorder(BorderFactory.createEmptyBorder());
                 b11.addActionListener(this);
                 p2.add(b11);
 
@@ -137,25 +125,22 @@ public class Dashboard extends JFrame implements ActionListener {
                 b12.setBackground(new Color(0, 0, 102));
                 b12.setForeground(Color.WHITE);
                 b12.setBounds(0, 330, 270, 35);
-                // b12.setBorder(BorderFactory.createEmptyBorder());
-                // b1.addActionListener(this);
+                b12.addActionListener(this);
                 p2.add(b12);
 
-                b13 = new JButton("Add Personal Details");
+                b13 = new JButton("Calculator");
                 b13.setFont(new Font("Tahoma", Font.PLAIN, 20));
                 b13.setBackground(new Color(0, 0, 102));
                 b13.setForeground(Color.WHITE);
                 b13.setBounds(0, 360, 270, 35);
-                // b13.setBorder(BorderFactory.createEmptyBorder());
                 b13.addActionListener(this);
                 p2.add(b13);
 
-                b14 = new JButton("Add Personal Details");
+                b14 = new JButton("Notepad");
                 b14.setFont(new Font("Tahoma", Font.PLAIN, 20));
                 b14.setBackground(new Color(0, 0, 102));
                 b14.setForeground(Color.WHITE);
                 b14.setBounds(0, 390, 270, 35);
-                // b14.setBorder(BorderFactory.createEmptyBorder());
                 b14.addActionListener(this);
                 p2.add(b14);
 
@@ -164,8 +149,7 @@ public class Dashboard extends JFrame implements ActionListener {
                 b15.setBackground(new Color(0, 0, 102));
                 b15.setForeground(Color.WHITE);
                 b15.setBounds(0, 420, 270, 35);
-                // b15.setBorder(BorderFactory.createEmptyBorder());
-                // b1.addActionListener(this);
+                b15.addActionListener(this);
                 p2.add(b15);
 
                 ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("travel/management/system/icons/home.jpg"));
@@ -183,7 +167,31 @@ public class Dashboard extends JFrame implements ActionListener {
         }
 
         public void actionPerformed(ActionEvent ae) {
-                if (ae.getSource() == b13) {
+                if (ae.getSource() == b1) {
+                        new AddCustomer(username).setVisible(true);
+                } else if (ae.getSource() == b2) {
+                        new UpdateCustomer(username).setVisible(true);
+                } else if (ae.getSource() == b3) {
+                        new ViewCustomer(username).setVisible(true);
+                } else if (ae.getSource() == b4) {
+                        new DeleteCustomer(username).setVisible(true);
+                } else if (ae.getSource() == b5) {
+                        new CheckPackage().setVisible(true);
+                } else if (ae.getSource() == b6) {
+                        new BookPackage(username).setVisible(true);
+                } else if (ae.getSource() == b7) {
+                        new ViewPackage(username).setVisible(true);
+                } else if (ae.getSource() == b8) {
+                        new CheckHotels().setVisible(true);
+                } else if (ae.getSource() == b9) {
+                        new BookHotel(username).setVisible(true);
+                } else if (ae.getSource() == b10) {
+                        new ViewBookedHotel(username).setVisible(true);
+                } else if (ae.getSource() == b11) {
+                        new Destinations().setVisible(true);
+                } else if (ae.getSource() == b12) {
+                        new Payment().setVisible(true);
+                } else if (ae.getSource() == b13) {
                         try {
                                 Runtime.getRuntime().exec("calc.exe");
                         } catch (Exception e) {
@@ -193,22 +201,8 @@ public class Dashboard extends JFrame implements ActionListener {
                                 Runtime.getRuntime().exec("notepad.exe");
                         } catch (Exception e) {
                         }
-                } else if (ae.getSource() == b1) {
-                        new AddCustomer(username).setVisible(true);
-                } else if (ae.getSource() == b2) {
-                        new UpdateCustomer(username).setVisible(true);
-                } else if (ae.getSource() == b3) {
-                        new ViewCustomer(username).setVisible(true);
-                } else if (ae.getSource() == b5) {
-                        new CheckPackage().setVisible(true);
-                } else if (ae.getSource() == b6) {
-                        new BookPackage(username).setVisible(true);
-                } else if (ae.getSource() == b7) {
-                        new ViewPackage(username).setVisible(true);
-                } else if (ae.getSource() == b8) {
-                        new CheckHotels().setVisible(true);
-                } else if (ae.getSource() == b11) {
-                        new Destinations().setVisible(true);
+                } else if (ae.getSource() == b15) {
+                        new About().setVisible(true);
                 }
         }
 

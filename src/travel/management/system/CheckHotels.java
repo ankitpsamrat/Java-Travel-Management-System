@@ -51,9 +51,9 @@ public class CheckHotels extends JFrame implements Runnable {
 
     public void run() {
 
-        String[] text = new String[] { "JW Marriot Hotal", "Mandarin Hotal", "Four Seasons Hotal", "Radinson Hotal",
-                "Classio Hotal", "The Bay Club Hotal", "Breeze Hotal", "Quick Stop Hotal", "Happy Morning Hotal",
-                "Moss View Hotal" };
+        String[] text = new String[] { "JW Marriot Hotel", "Mandarin Hotel", "Four Seasons Hotel", "Radinson Hotel",
+                "Classio Hotel", "The Bay Club Hotel", "Breeze Hotel", "Quick Stop Hotel", "Happy Morning Hotel",
+                "Moss View Hotel" };
 
         try {
             for (int i = 0; i <= 9; i++) {

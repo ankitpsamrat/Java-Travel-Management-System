@@ -17,7 +17,7 @@ public class UpdateCustomer extends JFrame implements ActionListener {
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
 
-        JLabel l11 = new JLabel("UPDATE CUSTOMER DETAILS");
+        JLabel l11 = new JLabel("UPDATE PERSONAL DETAILS");
         l11.setBounds(50, 0, 300, 25);
         l11.setFont(new Font("Tahoma", Font.PLAIN, 20));
         add(l11);
@@ -99,16 +99,16 @@ public class UpdateCustomer extends JFrame implements ActionListener {
         add(t7);
 
         b1 = new JButton("Update");
-        b1.setBackground(Color.BLACK);
+        b1.setBackground(Color.BLUE);
         b1.setForeground(Color.WHITE);
-        b1.setBounds(70, 430, 100, 25);
+        b1.setBounds(70, 430, 100, 30);
         b1.addActionListener(this);
         add(b1);
 
         b2 = new JButton("Back");
-        b2.setBackground(Color.BLACK);
+        b2.setBackground(Color.BLUE);
         b2.setForeground(Color.WHITE);
-        b2.setBounds(220, 430, 100, 25);
+        b2.setBounds(220, 430, 100, 30);
         b2.addActionListener(this);
         add(b2);
 
@@ -157,7 +157,7 @@ public class UpdateCustomer extends JFrame implements ActionListener {
             try {
                 Conn c = new Conn();
                 c.s.executeUpdate(q);
-                JOptionPane.showMessageDialog(null, "Customer Details Updated Succesfully");
+                JOptionPane.showMessageDialog(null, "Personal Details Updated Succesfully");
                 setVisible(false);
             } catch (Exception e) {
                 e.printStackTrace();

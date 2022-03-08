@@ -87,9 +87,9 @@ public class ViewCustomer extends JFrame implements ActionListener {
         add(l19);
 
         b2 = new JButton("Back");
-        b2.setBackground(Color.BLACK);
+        b2.setBackground(Color.BLUE);
         b2.setForeground(Color.WHITE);
-        b2.setBounds(220, 430, 100, 25);
+        b2.setBounds(220, 430, 100, 30);
         b2.addActionListener(this);
         add(b2);
 

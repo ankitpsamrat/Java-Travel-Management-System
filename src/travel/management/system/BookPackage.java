@@ -117,22 +117,22 @@ public class BookPackage extends JFrame implements ActionListener {
 
         b1 = new JButton("Check Price");
         b1.setForeground(Color.WHITE);
-        b1.setBackground(Color.BLACK);
+        b1.setBackground(Color.BLUE);
         b1.setBounds(60, 380, 120, 30);
         b1.addActionListener(this);
         add(b1);
 
         b2 = new JButton("Book Package");
         b2.setForeground(Color.WHITE);
-        b2.setBackground(Color.BLACK);
+        b2.setBackground(Color.BLUE);
         b2.setBounds(200, 380, 120, 30);
         b2.addActionListener(this);
         add(b2);
 
         b3 = new JButton("Back");
         b3.setForeground(Color.WHITE);
-        b3.setBackground(Color.BLACK);
-        b3.setBounds(340, 380, 120, 30);
+        b3.setBackground(Color.BLUE);
+        b3.setBounds(340, 380, 100, 30);
         b3.addActionListener(this);
         add(b3);
 
@@ -160,7 +160,7 @@ public class BookPackage extends JFrame implements ActionListener {
                 c.s.executeUpdate("insert into bookpackage values('" + l11.getText() + "','" + c1.getSelectedItem()
                         + "','" + t1.getText() + "','" + l12.getText() + "','" + l13.getText() + "','" + l14.getText()
                         + "','" + l15.getText() + "')");
-                JOptionPane.showMessageDialog(null, "Package Booked Successfuly");
+                JOptionPane.showMessageDialog(null, "Package Booked Successfully");
                 this.setVisible(false);
             } catch (Exception e) {
 
