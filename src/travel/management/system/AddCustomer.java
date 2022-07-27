@@ -8,7 +8,7 @@ import java.sql.*;
 public class AddCustomer extends JFrame implements ActionListener {
 
     JTextField t1, t2, t3, t4, t5, t6, t7;
-    JComboBox c1;
+    JComboBox<String> c1;
     JRadioButton r1, r2;
     JButton b1, b2;
 
@@ -29,7 +29,7 @@ public class AddCustomer extends JFrame implements ActionListener {
         l2.setBounds(30, 90, 200, 25);
         add(l2);
 
-        c1 = new JComboBox(new String[] { "Passport", "Aadhar card", "Pan card", "Drivery Licence" });
+        c1 = new JComboBox<String>(new String[] { "Passport", "Aadhar card", "Pan card", "Drivery Licence" });
         c1.setBounds(220, 90, 200, 25);
         add(c1);
 
